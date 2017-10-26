@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arqdsis.provaint201303893.MainActivity">
+
+    /**/
+
+
+ <TextView
+        android:id="@+id/idTabuada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtLblTabuada" />
+
+
+
+    <EditText
+        android:id="@+id/editTabuada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTabuada"/>
+
+
+    <TextView
+        android:id="@+id/idContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtLblAte"
+        android:layout_below="@id/editTabuada"/>
+
+
+    <EditText
+        android:id="@+id/editContador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idContador"/>
+
+
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtBtnCalcular"
+        android:layout_below="@+id/editContador"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:onClick="printResult"/>
+
+</RelativeLayout>
